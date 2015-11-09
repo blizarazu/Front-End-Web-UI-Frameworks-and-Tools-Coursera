@@ -93,30 +93,6 @@
             </div>
         </div>
     </div>
-
-    <header class="jumbotron">
-
-        <!-- Main component for a primary marketing message or call to action -->
-
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-xs-12 col-sm-8">
-                    <h1>Ristorante con Fusion</h1>
-                    <p style="padding:40px;"></p>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div class="col-xs-12 col-sm-2">
-                    <p style="padding:20px;"></p>
-                    <img src="img/logo.png" class="img-responsive">
-                </div>
-                <div class="col-xs-12 col-sm-2 text-center">
-                    <p style="padding:40px;"></p>
-                    <a data-toggle="modal" data-target="#reservationModal" type="button" href="#reservationForm" class="btn btn-warning btn-block">Reserve table</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    
     <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -136,6 +112,17 @@
                         <span style="padding-right: 10px;"><input id="guestNumber" type="radio" name="guests" value="4"> 4</span>
                         <span style="padding-right: 10px;"><input id="guestNumber" type="radio" name="guests" value="5"> 5</span>
                         <span style="padding-right: 10px;"><input id="guestNumber" type="radio" name="guests" value="6"> 6</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="section" class="col-sm-2 control-label">Section</label>
+                        <div id="section" class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                          </label>
+                          <label class="btn btn-danger">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                          </label>
+                        </div>
                     </div>
                     <div class="form-group">
 
@@ -162,6 +149,29 @@
             </div>
         </div>
     </div>
+
+    <header class="jumbotron">
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1>Ristorante con Fusion</h1>
+                    <p style="padding:40px;"></p>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <p style="padding:20px;"></p>
+                    <img src="img/logo.png" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-2 text-center">
+                    <p style="padding:40px;"></p>
+                    <a data-toggle="modal" data-target="#reservationModal" type="button" href="#reservationForm" class="btn btn-warning btn-block">Reserve table</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="container">
        
