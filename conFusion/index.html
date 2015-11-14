@@ -61,7 +61,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a>
+                        <a id="loginLink">
                             <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
@@ -366,6 +366,11 @@
         $('#reservationButton').click(function(e) {
             e.preventDefault();
             $('#reservationModal').modal('show');
+        });
+        
+        $('#loginLink').click(function(e) {
+            e.preventDefault();
+            $('#loginModal').modal('show');
         });
     </script>
 </body>
