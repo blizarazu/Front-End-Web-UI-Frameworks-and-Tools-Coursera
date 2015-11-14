@@ -361,16 +361,16 @@
                         $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
             });
-        });
+            
+            $('#reservationButton').click(function(e) {
+                e.preventDefault();
+                $('#reservationModal').modal('toggle');
+            });
         
-        $('#reservationButton').click(function(e) {
-            e.preventDefault();
-            $('#reservationModal').modal('toggle');
-        });
-        
-        $('#loginLink').click(function(e) {
-            e.preventDefault();
-            $('#loginModal').modal('toggle');
+            $('#loginLink').click(function(e) {
+                e.preventDefault();
+                $('#loginModal').modal('toggle');
+            });
         });
     </script>
 </body>
